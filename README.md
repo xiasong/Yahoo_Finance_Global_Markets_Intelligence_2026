@@ -1,4 +1,4 @@
-markdown# Cross-Asset Market Intelligence Workspace
+# Cross-Asset Market Intelligence Workspace
 
 An interactive, production-grade quantitative research workspace built using **Plotly Dash** and **Pandas**. This dashboard enables investment analysts to instantly evaluate and optimize cross-asset risk-reward profiles across 451 macro financial assets simultaneously, mapping asset performance metrics against standardized, annualized volatility.
 

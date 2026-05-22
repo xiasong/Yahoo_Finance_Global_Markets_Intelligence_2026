@@ -4,7 +4,7 @@ import pandas as pd
 def load_market_data():
     """
     Loads, cleans, and optimizes the 2026 Global Markets dataset.
-    Automatically parses dates and categorizes assets to save memory.
+    Automatically parses categorizes assets to save memory.
     """
     # Look for the data file relative to the project root directory
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,22 +14,17 @@ def load_market_data():
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Missing Kaggle file at: {file_path}. Please download it.")
         
-    # 1. Read the CSV file into a Pandas DataFrame
+    # Read the CSV file into a Pandas DataFrame
     df = pd.read_csv(file_path)
     
-    # 2. Parse Date fields if they exist in the 131 columns
-    if 'Date' in df.columns:
-        df['Date'] = pd.to_datetime(df['Date'])
-        df = df.sort_values('Date')
-        
-    # 3. Clean string white spaces out of categorical columns
+    # Clean string white spaces out of categorical columns
     string_cols = df.select_dtypes(include=['object']).columns
     for col in string_cols:
         df[col] = df[col].astype(str).str.strip()
         
-    # 4. Optimize memory usage for your layout dropdowns
-    if 'Asset_Class' in df.columns:
-        df['Asset_Class'] = df['Asset_Class'].astype('category')
+    # Optimize memory usage for your layout dropdowns
+    if 'asset_class' in df.columns:
+        df['asset_class'] = df['asset_class'].astype('category')
         
     return df
 

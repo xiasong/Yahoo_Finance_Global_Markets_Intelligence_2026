@@ -26,6 +26,10 @@ To establish an isolated, reproducible development pipeline on a new workstation
     conda activate dash-env
     ```
 5. **Target Data Ingestion:** Retrieved the core dataset from Kaggle and mounted it within the decoupled project directory layout at `DAS_project/yahoo_finance_dashboard/data/`.
+Once the environment is active, install all required dependencies using the project requirements file:
+```bash
+pip install -r requirements.txt
+```
 
 ---
 

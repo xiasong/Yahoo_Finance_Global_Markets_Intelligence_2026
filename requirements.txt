@@ -1,0 +1,11 @@
+# Core Data Processing Pipeline
+pandas>=2.2.0
+
+# Interactive Dashboard Framework
+dash>=2.15.0
+
+# Interactive Visualization Engine
+plotly>=5.19.0
+
+# WSGI Server Component for Python Frameworks (Ensures broad server compatibility)
+werkzeug>=3.0.1

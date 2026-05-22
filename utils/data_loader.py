@@ -22,7 +22,7 @@ def load_market_data():
     for col in string_cols:
         df[col] = df[col].astype(str).str.strip()
         
-    # Optimize memory usage for your layout dropdowns
+    # Optimize memory usage for the layout dropdowns
     if 'asset_class' in df.columns:
         df['asset_class'] = df['asset_class'].astype('category')
         

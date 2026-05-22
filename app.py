@@ -5,7 +5,7 @@ import pandas as pd
 from dash import dcc, html, Input, Output
 import plotly.express as px
 
-# Ensure python can locate your 'utils' folder cleanly
+# Ensure python can locate the 'utils' folder cleanly
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # ==============================================================================

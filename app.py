@@ -140,10 +140,10 @@ def update_graphs(selected_asset, selected_ticker):
     )
     timeline_fig.update_layout(
         xaxis_tickangle=-45, 
-        margin={'l': 50, 'b': 80, 't': 50, 'r': 20},
+        margin={'l': 60, 'b': 90, 't': 60, 'r': 20},
         title={
             'text': f"Top 20 Tickers in {selected_asset} by Weekly Gains",
-            'font': {'size': 14}
+            'font': {'size': 13}
         }
     )
     
@@ -162,10 +162,10 @@ def update_graphs(selected_asset, selected_ticker):
     # Style tweaks for polished visual appeal
     scatter_fig.update_traces(marker=dict(size=14, line=dict(width=1, color='DarkSlateGrey')))
     scatter_fig.update_layout(
-        margin={'l': 65, 'b': 65, 't': 50, 'r': 20},
+        margin={'l': 75, 'b': 75, 't': 60, 'r': 20},
         title={
             'text': f"Risk vs. Reward Landscape: {selected_asset} Cluster Peer Universe",
-            'font': {'size': 14}
+            'font': {'size': 13}
         }
     )
     

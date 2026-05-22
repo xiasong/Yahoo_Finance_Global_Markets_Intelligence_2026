@@ -1,11 +1,28 @@
-# Core Data Processing Pipeline
-pandas>=2.2.0
-
-# Interactive Dashboard Framework
-dash>=2.15.0
-
-# Interactive Visualization Engine
-plotly>=5.19.0
-
-# WSGI Server Component for Python Frameworks (Ensures broad server compatibility)
-werkzeug>=3.0.1
+blinker==1.9.0
+certifi==2026.5.20
+charset-normalizer==3.4.7
+click==8.4.0
+dash==4.1.0
+Flask==3.1.3
+gunicorn==26.0.0
+idna==3.15
+importlib_metadata==9.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+narwhals @ file:///opt/miniconda3/conda-bld/narwhals_1760003494582/work
+nest-asyncio==1.6.0
+numpy @ file:///Users/ec2-user/croot/numpy_and_numpy_base_1776188797328/work/dist/numpy-2.4.4-cp313-cp313-macosx_12_0_arm64.whl#sha256=85543b057ee3e27234d37d8b80ec09677db86df0accb1e4bb9b3695ad915e366
+packaging==26.0
+pandas @ file:///Users/ec2-user/croot/pandas_1775480141109/work
+plotly @ file:///Users/ec2-user/croot/plotly_1779218993153/work
+python-dateutil @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/python-dateutil_1728585579455/work
+requests==2.34.2
+retrying==1.4.2
+setuptools==82.0.1
+six @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_03myqm7p6o/croot/six_1744271511946/work
+typing_extensions==4.15.0
+urllib3==2.7.0
+Werkzeug==3.1.8
+wheel==0.46.3
+zipp==4.1.0

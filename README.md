@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ## 2. Data Audit & Core Metrics
 
-The schema spans **135 columns** for 451 assets. To optimize a rapid 2-hour development cycle, the workspace targets four core variables:
+The schema spans **131 columns** for 451 assets. To optimize a rapid 2-hour development cycle, the workspace targets four core variables:
 * `ticker`: Unique asset identifier.
 * `asset_class`: Macroeconomic cluster mapping.
 * `return_1w_pct`: Short-term reward proxy.
